@@ -107,3 +107,7 @@ espacio=[ ,\t,\r]+
 
 /* Error de analisis */
  . {return ERROR;}
+/* Dos Puntos */
+( ":" ) {lexeme=yytext(); return Dos_Puntos;}
+/* Coma */
+( "," ) {lexeme=yytext(); return Coma_Simple;}

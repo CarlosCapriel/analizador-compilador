@@ -84,3 +84,7 @@ Symbol(sym.Op_relacional);}
 ("(-"{D}+")")|{D}+ {return new Symbol(sym.Numero);}
 /* Error de analisis */
 . {return new Symbol(sym.ERROR);}
+/* Dos Puntos */
+( ":" ) {return new Symbol(sym.Dos_Puntos);}
+/* Coma */
+( "," ) {return new Symbol(sym.Coma_Simple);}

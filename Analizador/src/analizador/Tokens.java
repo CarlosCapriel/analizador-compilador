@@ -36,5 +36,7 @@ public enum Tokens {
     P_coma,
     Identificador,
     Numero,
-    ERROR
+    ERROR,
+    Dos_Puntos,
+    Coma_Simple
 }

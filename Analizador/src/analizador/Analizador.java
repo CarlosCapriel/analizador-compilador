@@ -160,6 +160,12 @@ public class Analizador extends javax.swing.JFrame {
                 case ERROR:
                     resultado += " <Simbolo no definido>\n";
                     break;
+                   case Coma_Simple:
+                    resultado += " <Coma>\t" + lexer.lexeme + "\n";
+                    break;
+                case Dos_Puntos:
+                    resultado += " <Dos Puntos>\t" + lexer.lexeme + "\n";
+                    break;
                 default:
                     resultado += " < " + lexer.lexeme + " >\n";
                     break;
